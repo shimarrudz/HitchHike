@@ -4,23 +4,8 @@ import java.math.BigInteger;
 import java.security.MessageDigest;
 
 public class Criptografia extends Usuario{
-	
-    private String senhaEncriptada;
     
     public Criptografia() {
-    }
-    
-    public Criptografia(String senhaEncriptada) {
-    	senhaEncriptada = this.senhaEncriptada;
-    	
-    }
-
-	public String getSenhaEncriptada() {
-        return senhaEncriptada;
-    }
-
-    public void setSenhaEncriptada(String senhaEncriptada) {
-        this.senhaEncriptada = senhaEncriptada;
     }
 
     public static String encriptacao(String senha) {
@@ -40,5 +25,3 @@ public class Criptografia extends Usuario{
         System.out.println("Método para decriptar a senha");
     }
 }
-
-

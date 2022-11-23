@@ -1,5 +1,8 @@
 package br.com.HitchhikePlus.beans;
 
+import javax.swing.*;
+import java.util.ArrayList;
+
 public class Usuario {
 
 	private String nome;
@@ -17,10 +20,6 @@ public class Usuario {
 	private String senha;
 	
 	public Usuario() {}
-	
-	public Usuario(String senha) {
-		senha = this.senha;
-	}
 	
 	public Usuario(String nome, String emailPessoal, String cpf, String telefone, String genero, String dataNascimento,
 			String bairro, String cidade, String estado, String endereco, String complementos, int cep, String senha) {
@@ -142,5 +141,21 @@ public class Usuario {
 
 	public void setSenha(String senha) {
 		this.senha = senha;
-	} 
+	}
+
+	public void cadastrar(Usuario usuario) {
+
+		ArrayList<Usuario> usuarios = new ArrayList<Usuario>();
+
+		//Fazer com todos os atributos
+		usuario.setNome(JOptionPane.showInputDialog("Cadastre seu nome"));
+
+		//Fazer com todos os atributos
+		usuario.nome = getNome();
+		usuario.senha = Criptografia.encriptacao(getSenha());
+
+		usuarios.add(usuario);
+
+		System.out.println(usuarios);
+	}
 }

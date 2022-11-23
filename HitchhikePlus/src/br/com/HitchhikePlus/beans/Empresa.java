@@ -8,17 +8,13 @@ public class Empresa extends Usuario {
 	private String cdVerificacao;
 
 	public Empresa() {}
-	
-	public Empresa(String nome, String emailPessoal, String cpf, String telefone, String genero, String dataNascimento,
-			String bairro, String cidade, String estado, String endereco, String complementos, int cep, String senha, String nomeEmpresa,
-			String empresaFilial, String emailCorporativo, String cdVerificacao) {
-		
-		super(nome, emailPessoal, cpf, telefone, genero, dataNascimento, bairro, cidade, estado, endereco, complementos, cep,
-				senha);
-		nomeEmpresa = this.nomeEmpresa;
-		empresaFilial = this.empresaFilial;
-		emailCorporativo = this.emailCorporativo;
-		cdVerificacao = this.cdVerificacao;
+
+	public Empresa(String nome, String emailPessoal, String cpf, String telefone, String genero, String dataNascimento, String bairro, String cidade, String estado, String endereco, String complementos, int cep, String senha, String nomeEmpresa, String empresaFilial, String emailCorporativo, String cdVerificacao) {
+		super(nome, emailPessoal, cpf, telefone, genero, dataNascimento, bairro, cidade, estado, endereco, complementos, cep, senha);
+		this.nomeEmpresa = nomeEmpresa;
+		this.empresaFilial = empresaFilial;
+		this.emailCorporativo = emailCorporativo;
+		this.cdVerificacao = cdVerificacao;
 	}
 
 	public String getNomeEmpresa() {
