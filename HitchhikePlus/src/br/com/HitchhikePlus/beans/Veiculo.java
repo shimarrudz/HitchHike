@@ -1,4 +1,6 @@
 package br.com.HitchhikePlus.beans;
 
-public class Veiculo {
+public class Veiculo extends Usuario {
+	
+	
 }
