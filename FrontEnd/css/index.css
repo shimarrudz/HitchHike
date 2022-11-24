@@ -11,21 +11,12 @@ section{
     justify-content: space-between;
     overflow: hidden;
 }
-.circle{
-    position: absolute;
-    top: 125px;
-    left: 275px;
-    width: 80%;
-    height: 80%;
-    background-color: #000000;
-    clip-path: circle(50% at bottom right);
-}
 /*Imagem carro*/
 .carro{
     position: absolute;
-    width: 40%;
-    right: 0px;
-    top: 420px;
+    width: 60%;
+    right: -70px;
+    top: 50px;
 }
 /*Div titulo (text)*/
 .container{
@@ -124,7 +115,7 @@ section{
     padding: 30px;
     display: flexbox;
     width: 280px;
-    height: 400px;
+    height: 360px;
     margin: 30px;
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
@@ -133,20 +124,21 @@ section{
     border-left: 1px solid rgba(255, 255, 255, 0.5);
     text-align: justify;
 }
+
 /*CSS cards efeito*/
-.fundo-card .card .content{
+ .content{
     padding: 20px;
     text-align: center;
     transform: translateY(100px);
     opacity: 0;
     transition: 0.5s;
 }
-.fundo-card .card:hover .content{
+ .card:hover .content{
     transform: translateY(0px);
     opacity: 1;
 }
 /*CSS cards formatação texto*/
-.fundo-card .card .content h2{  
+.content h2{  
     position: absolute;
     top: 30px;
     right: 30px;
@@ -154,18 +146,18 @@ section{
     color: rgba(255, 255, 255, 0.05);
     pointer-events: none;
 }
-.fundo-card .card .content h3{
+.content h3{
     font-size: 1.8em;
     color: white;
     z-index: 1;
 }
-.fundo-card .card .content p{
+.content p{
     font-size: 1em;
     color: white;
     font-weight: 300;
 }
 /*CSS cards formatação botão*/
-.fundo-card .card .content a{
+.content a{
     position: relative;
     display: inline-block;
     background-color: white;
