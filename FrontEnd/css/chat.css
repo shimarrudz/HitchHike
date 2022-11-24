@@ -1,0 +1,115 @@
+/* Tema escuro
+
+    body {
+    padding: 25px;
+    background-color: white;
+    color: black;
+    font-size: 25px;
+  }
+  
+  .dark-mode {
+    background-color: black;
+    color: white;
+  }
+
+  .botaoMudaTema {
+    border-radius: 20px;
+    border-color: #F39A8F;
+    background-color: #F44E3F;
+    color: white;
+    
+  } */
+
+  /* .pngPerfil {
+    width: 20px;
+  } */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.chat-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #F40003;
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 2px 4px #F57A6B;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.chat-btn:hover {
+    bottom: 10px;
+}
+
+.chat-btn img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+}
+
+.chat-btn span{
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.chat-form {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #F57A6B;
+    padding: 10px;
+    color: black;
+    box-shadow: 0px 3px 5px #F39A8F;
+    min-height: 300px;
+    min-width: 300px;
+    z-index: 10;
+    text-align: center;
+    display: none;
+}
+
+.textH2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font: smaller;
+}
+
+.chat-form form{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.chat-form form input,.chat-form form textarea {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0px 2px 3px #F39A8F;
+}
+
+button {
+    padding: 10px 30px;
+    margin: 10px;
+    font-weight: bold;
+    border-radius: 30px;
+    width: 100px;
+    border: none;
+    box-shadow: 0px 2px 3px gray;
+    cursor: pointer;
+}
+
+.primeiroBotao {
+    background-color: #090909;
+    color: white;
+}
+
+.primeiroBotao:hover {
+    background-color: #F40003;
+}
