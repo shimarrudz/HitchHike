@@ -9,7 +9,7 @@ public class Usuario {
 	private String emailPessoal;
 	private String cpf;
 	private String telefone;
-	private String genero;
+	private char genero;
 	private String dataNascimento;
 	private String bairro;
 	private String cidade;
@@ -21,7 +21,7 @@ public class Usuario {
 	
 	public Usuario() {}
 	
-	public Usuario(String nome, String emailPessoal, String cpf, String telefone, String genero, String dataNascimento,
+	public Usuario(String nome, String emailPessoal, String cpf, String telefone, char genero, String dataNascimento,
 			String bairro, String cidade, String estado, String endereco, String complementos, int cep, String senha) {
 		super();
 		this.nome = nome;
@@ -71,11 +71,11 @@ public class Usuario {
 		this.telefone = telefone;
 	}
 
-	public String getGenero() {
+	public char getGenero() {
 		return genero;
 	}
 
-	public void setGenero(String genero) {
+	public void setGenero(char genero) {
 		this.genero = genero;
 	}
 
@@ -147,11 +147,32 @@ public class Usuario {
 
 		ArrayList<Usuario> usuarios = new ArrayList<Usuario>();
 
-		//Fazer com todos os atributos
-		usuario.setNome(JOptionPane.showInputDialog("Cadastre seu nome"));
+		usuario.setNome(JOptionPane.showInputDialog("Cadastre seu nome: "));
+		usuario.setEmailPessoal(JOptionPane.showInputDialog("Cadastre seu E-mail pessoal: "));
+		usuario.setCpf(JOptionPane.showInputDialog("Cadastre seu CPF: "));
+		usuario.setTelefone(JOptionPane.showInputDialog("Cadastre seu Telefone: "));
+		usuario.setGenero(JOptionPane.showInputDialog("Cadastre seu Genero: ").charAt(4));
+		usuario.setDataNascimento(JOptionPane.showInputDialog("Cadastre sua data de nascimento: "));
+		usuario.setBairro(JOptionPane.showInputDialog("Cadastre seu Bairro: "));
+		usuario.setCidade(JOptionPane.showInputDialog("Cadastre sua cidade: "));
+		usuario.setEstado(JOptionPane.showInputDialog("Cadastre seu Estado: "));
+		usuario.setEndereco(JOptionPane.showInputDialog("Cadastre seu Endereço: "));
+		usuario.setComplementos(JOptionPane.showInputDialog("Cadastre seu Complementos: "));
+		usuario.setCep(Integer.parseInt(JOptionPane.showInputDialog("Cadastre seu CEP: ")));
+		usuario.setSenha(JOptionPane.showInputDialog("Cadastre sua senha: "));
 
-		//Fazer com todos os atributos
 		usuario.nome = getNome();
+		usuario.emailPessoal = getEmailPessoal();
+		usuario.cpf = getCpf();
+		usuario.telefone = getTelefone();
+		usuario.genero = getGenero();
+		usuario.dataNascimento = getDataNascimento();
+		usuario.bairro = getBairro();
+		usuario.cidade = getCidade();
+		usuario.estado = getEstado();
+		usuario.endereco = getEndereco();
+		usuario.complementos = getComplementos();
+		usuario.cep = getCep();
 		usuario.senha = Criptografia.encriptacao(getSenha());
 
 		usuarios.add(usuario);
