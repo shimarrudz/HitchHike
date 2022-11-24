@@ -71,25 +71,30 @@ public class Main {
 
         // Instanciando Objetos!!
 
-        ApiColaboracao apiColaboracao = new ApiColaboracao(recebeEnderecoEmpresa, recebeEnderecoMotorista, recebeRaio, recebeTrajeto, recebeEnderecoPassageiro);
+        ApiColaboracao apiColaboracao = new ApiColaboracao(recebeEnderecoEmpresa, recebeEnderecoMotorista,
+                recebeRaio, recebeTrajeto, recebeEnderecoPassageiro);
 
         Avaliacao avaliacao = new Avaliacao(recebeHorarioViajem, recebeDuracaoViajem, recebeAndamento,
-                recebeAvaliacaoViajem, recebeAvaliacaoVeiculo, recebeAvaliacaoMotorista, recebeAvaliacaoPassageiro, recebeComentario);
+                recebeAvaliacaoViajem, recebeAvaliacaoVeiculo, recebeAvaliacaoMotorista,
+                recebeAvaliacaoPassageiro, recebeComentario);
 
-        Conexao conexao = new Conexao(recebeNome, recebeEmailPessoal, recebeCpf, recebeTelefone, recebeGenero, recebeDataNascimento,
-                recebeBairo, recebeCidade, recebeEstado, recebeEndereco, recebeComplementos, recebeCep, recebeSenha, recebeAmizade);
+        Conexao conexao = new Conexao(recebeNome, recebeEmailPessoal, recebeCpf, recebeTelefone,
+                recebeGenero, recebeDataNascimento, recebeBairo, recebeCidade,
+                recebeEstado, recebeEndereco, recebeComplementos, recebeCep, recebeSenha, recebeAmizade);
 
         Conteudo conteudo = new Conteudo(recebeMapa, recebeForum, recebeHomepage);
 
-        Empresa empresa = new Empresa(recebeNome, recebeEmailPessoal, recebeCpf, recebeTelefone, recebeGenero, recebeDataNascimento,
-                recebeBairo, recebeCidade, recebeEstado, recebeEndereco, recebeComplementos, recebeCep, recebeSenha, recebeNomeEmpresa,
-                recebeEmpresaFilial, recebeEmailCorporativo, recebeCdVerificacao);
+        Empresa empresa = new Empresa(recebeNome, recebeEmailPessoal, recebeCpf, recebeTelefone, recebeGenero,
+                recebeDataNascimento, recebeBairo, recebeCidade, recebeEstado, recebeEndereco, recebeComplementos,
+                recebeCep, recebeSenha, recebeNomeEmpresa, recebeEmpresaFilial, recebeEmailCorporativo,
+                recebeCdVerificacao);
 
         Forum forum = new Forum(recebeAssunto, recebeDuvida, recebeResposta);
 
-        Veiculo veiculo = new Veiculo(recebeNome, recebeEmailPessoal, recebeCpf, recebeTelefone, recebeGenero, recebeDataNascimento,
-                recebeBairo, recebeCidade, recebeEstado, recebeEndereco, recebeComplementos, recebeCep, recebeSenha,
-                recebeModelo, recebePlaca, recebeMarca, recebeNumeroAssentos, recebeQtdeCombustivel, recebeCor);
+        Veiculo veiculo = new Veiculo(recebeNome, recebeEmailPessoal, recebeCpf, recebeTelefone, recebeGenero,
+                recebeDataNascimento, recebeBairo, recebeCidade, recebeEstado, recebeEndereco, recebeComplementos,
+                recebeCep, recebeSenha, recebeModelo, recebePlaca, recebeMarca, recebeNumeroAssentos,
+                recebeQtdeCombustivel, recebeCor);
 
         Viagem viagem = new Viagem(recebeHorarioViajem, recebeDuracaoViajem, recebeAndamento);
 
