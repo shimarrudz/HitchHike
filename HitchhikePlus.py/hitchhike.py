@@ -14,6 +14,7 @@ while (saida == 1): #Usuario
 
     opcao = int(input("Digite a opção desejada: "))
     if (opcao == 1): # Cadastro do Usuario
+        nome_empresa = input("Digite o nome da empresa: ")
         nome = input("Nome e Sobrenome: ")
         user = input("Crie um User: ")
         email = input("Digite seu E-Mail: ")
@@ -22,18 +23,17 @@ while (saida == 1): #Usuario
         cpf = int(input("CPF(Apenas Números): "))
         numCelular = int(input("Digite seu número de telefone: "))
         senha = input("Crie uma senha: ")
-        hitchhike[user] = {'nome': nome, 'user': user, 'email': email, 'idade': idade, 'bairro': bairro,
+        hitchhike[user] = {'nome_empresa': nome_empresa,'nome': nome, 'user': user, 'email': email, 'idade': idade, 'bairro': bairro,
                           'cpf': cpf, 'celular': numCelular, 'senha': senha}
-        print("Prencha informações do seu veiculo")
     if (opcao2 == 1):# Veiculo
-        nome_empresa = input("Digite o nome da empresa: ")
+        print("Prencha informações do seu veiculo")
         nome_veiculo = input("Nome o nome do veiculo: ")
         cor = input("Crie a cor do veiculo: ")
         placa = input("Digite a placa do veiculo: ")
-        motorista[placa] = {'nome_empresa': nome_empresa, 'nome_veiculo': nome_veiculo, 'cor': cor, 'placa': placa}
+        motorista[placa] = {'nome_veiculo': nome_veiculo, 'cor': cor, 'placa': placa}
     elif (opcao == 2): #Login
         user = input("Digite seu User: ")
-        if (user in hitchhike ):
+        if (user in hitchhike):
             senha = input("Digite sua senha: ")
         else:
             print("User não encontrado, Tente novamente")
@@ -65,12 +65,23 @@ while (saida == 1): #Usuario
         print(hitchhike)
         if (opcao2 == 1):
             print(veiculo)
-    elif (opcao == 4):  # FAZENDO AINDA
-        for chave, subdic in veiculo.items(): # Conferir se tem mais de um usuario na mesma empresa
-            if (subdic['nome_empresa'] == ['nome_empresa']):
-        for chave, subdic in hitchhike.items(): # Conferir se tem mais de um usuario no mesmo bairro
-            if (subdic['bairro'] == ['bairro'] ):
-                print("Possui usuarios da mesma empresa, no seu bairro")
+    elif (opcao == 4):
+        cont_empresas = 0
+        nome_empresa = input("Digite o nome da empresa")
+        if nome_empresa in hitchhike[user]['nome_empresa']:
+            for chave, subdic in veiculo.items():  # Conferir se tem mais de um usuario na mesma empresa
+                if (subdic['nome_empresa'] == nome_empresa):
+                    cont_empresas += 1
+            if (cont_empresas > 1):
+                print("Tem mais de um usuário na empresa ", nome_empresa)
+        cont_bairros = 0
+        bairro = input("Digite o seu bairro")
+        if bairro in hitchhike[user]['bairro']:
+            for chave, subdic in hitchhike.items():  # Conferir se tem mais de um usuario no mesmo bairro
+                if (subdic['bairro'] == bairro):
+                    cont_bairros += 1
+            if (cont_bairros > 1):
+                print("Tem mais de um usuário no bairro ", bairro)
     elif (opcao == 5): # Deletar dados
         user = input("Digite seu User: ")
         if (user in hitchhike ):
