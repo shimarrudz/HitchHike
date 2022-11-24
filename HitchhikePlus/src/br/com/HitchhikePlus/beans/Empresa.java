@@ -49,5 +49,4 @@ public class Empresa extends Usuario {
     public void setCdVerificacao(String cdVerificacao) {
         this.cdVerificacao = cdVerificacao;
     }
-
 }
