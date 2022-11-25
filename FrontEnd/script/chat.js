@@ -1,4 +1,3 @@
-// MESSAGE INPUT
 const textarea = document.querySelector('.chatbox-message-input')
 const chatboxForm = document.querySelector('.chatbox-message-form')
 
@@ -16,9 +15,6 @@ textarea.addEventListener('input', function() {
     }
 })
 
-
-
-// TOGGLE CHATBOX
 const chatboxToggle = document.querySelector('.chatbox-toggle')
 const chatboxMessage = document.querySelector('.chatbox-message-wrapper')
 
@@ -26,9 +22,6 @@ chatboxToggle.addEventListener('click', function() {
     chatboxMessage.classList.toggle('show')
 })
 
-
-
-// DROPDOWN TOGGLE
 const dropdownToggle = document.querySelector('.chatbox-message-dropdown-toggle')
 const dropdownMenu = document.querySelector('.chatbox-message-dropdown-menu')
 
@@ -42,13 +35,6 @@ document.addEventListener('click', function(e) {
     }
 })
 
-
-
-
-
-
-
-// CHATBOX MESSAGE
 const chatboxMessageWrapper = document.querySelector('.chatbox-message-content')
 const chatboxNoMessage = document.querySelector('.chatbox-message-no-message')
 
@@ -60,8 +46,6 @@ chatboxForm.addEventListener('submit', function(e) {
         setTimeout(autoReply, 1000)
     }
 })
-
-
 
 function addZero(num) {
     return num < 10 ? '0' + num : num
@@ -91,7 +75,7 @@ function autoReply() {
     let message = `
 		<div class="chatbox-message-item received">
 			<span class="chatbox-message-item-text">
-				Thank you for your awesome support!
+				Obrigado pela carona!
 			</span>
 			<span class="chatbox-message-item-time">${addZero(today.getHours())}:${addZero(today.getMinutes())}</span>
 		</div>
