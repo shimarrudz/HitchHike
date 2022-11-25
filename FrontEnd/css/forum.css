@@ -1,0 +1,48 @@
+body {
+    background: #28292d;
+}
+
+.containerForum {
+    margin: 10px 60px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1,
+h4,
+ol {
+    margin: 0;
+}
+
+p {
+    margin: 5px 0;
+}
+
+.top-bar {
+    background-color: #F44E3F;
+    padding: 0 40px;
+    border-radius: 2px 2px 0px 0px;
+}
+
+.main {
+    background-color: #F39A8F;
+    padding: 10px 15px;
+    border-radius: 0px 0px 2px 2px;
+}
+
+.row {
+    padding: 5px 0;
+}
+
+.bottom {
+    display: flex;
+    color: #28292d;
+    font-size: 12px;
+}
+
+.timestamp {
+    padding-right: 10px;
+}
