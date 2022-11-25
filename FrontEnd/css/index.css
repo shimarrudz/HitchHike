@@ -1,5 +1,5 @@
 body{
-    background-color: #28292d; 
+    background: linear-gradient(0deg,#090909 ,#F40003,#f11a1e,#F44E3F,#F57A6B,#F39A8F)
 }
 /*Circulo vermelho*/
 section{
@@ -30,11 +30,12 @@ section{
     margin-right: -599px;
 }
 .container .text h2{
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 3em;
     margin-bottom: 10px;
     line-height: 2.5em;
     font-weight: 700;
+    text-shadow: 0 17px 17px rgba(0, 0, 0, 0.2);
 }
 .container .text h2 span{
     font-size: 3.5em;
@@ -58,7 +59,6 @@ section{
     z-index: 0;
     border-radius: 10px;
 }
-
 .botao:before {
     content: '';
     background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
@@ -75,19 +75,15 @@ section{
     transition: opacity .3s ease-in-out;
     border-radius: 10px;
 }
-
 .botao:active {
     color: white
 }
-
 .botao:after {
     background: transparent;
 }
-
 .botao:before {
     opacity: 1;
 }
-
 .botao:after {
     z-index: -1;
     content: '';
@@ -106,6 +102,7 @@ section{
 }
 /*CSS cards*/
 .card{
+    width: 100%;
     display: flex;
     align-items: center;
     padding-left: 150px;
@@ -120,23 +117,22 @@ section{
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
     background-color: rgba(255, 255, 255, 0.1);
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    border-left: 1px solid rgba(0, 0, 0, 0.5);
     text-align: justify;
 }
-
 /*CSS cards efeito*/
- .content{
+/* .content{
     padding: 20px;
     text-align: center;
     transform: translateY(100px);
     opacity: 0;
     transition: 0.5s;
 }
- .card:hover .content{
+.card:hover .content{
     transform: translateY(0px);
-    opacity: 1;
-}
+    opacity: 1; 
+}*/
 /*CSS cards formatação texto*/
 .content h2{  
     position: absolute;
@@ -148,8 +144,9 @@ section{
 }
 .content h3{
     font-size: 1.8em;
-    color: white;
+    color: rgb(0, 0, 0);
     z-index: 1;
+    text-align: center;
 }
 .content p{
     font-size: 1em;
@@ -158,19 +155,55 @@ section{
 }
 /*CSS cards formatação botão*/
 .content a{
-    position: relative;
     display: inline-block;
     background-color: white;
-    padding: 8px 20px;
+    padding: 9px 20px;
     margin-top: 15px;
     color: black;
     text-decoration: none;
     border-radius: 20px;
     font-weight: 500;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 17px 17px rgba(0, 0, 0, 0.2);
     border: 1px solid black;
+    
 }
-/*Css Chat bot*/
-.containerHome {
-    width: 100%;
+/*fundo vermlho*/
+.fundo-vermelho{
+    width: 400px;
+    height: 300px;
+}
+.fundo-vermelho h2{
+    position: absolute;
+    font-size: 22px;
+    color: white;
+    font-weight: 600;
+    left: 850px ;
+    top: 1050px;
+}
+.fundo-vermelho p{
+    position: absolute;
+    color: white;
+    left: 750px ;
+    top: 1100px;
+    text-align: center;
+}
+.fundo-vermelho a{
+    position: absolute;
+    text-decoration: none;
+    color:  black;
+    padding: 7px;
+    background-color: white;
+    border-radius: 15px;
+    font-weight: 500;
+    left: 900px;
+    border: 2px solid black;
+    top: 1200px;
+}
+.fundo-vermelho img{
+    position: absolute;
+    top: 1050px;
+    width: 25%;
+    right: 900px;
+    border: 2px solid black;
+    border-radius: 15px;
 }
