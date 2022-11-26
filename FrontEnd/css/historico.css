@@ -1,0 +1,141 @@
+body{
+    background-color:#23242a;
+}
+/*fundo com efeito*/
+.fundo{
+    position: absolute;
+    top: 90px;
+    right: 250px;
+    background-color: rgba(255, 255, 255, 0.05);
+    width: 925px;
+    height: 450px;
+    overflow: hidden;
+}
+/*Imagem Passageiro*/
+.circulo{
+    position: absolute;
+    top: 25px;
+    width: 150px;
+    right: 900px;
+    height: 150px;
+    border-radius: 100%;
+    border: solid 2px black;
+}
+.circulo img{
+    border-radius: 100%;
+    width: 101%;
+}
+/*Dados motorista*/
+.mot-1  p{
+    font-size: 15px;
+    color: black;
+    white-space: nowrap;
+}
+.mot-2 p{
+    top: 180px;
+    padding: 33spx;
+    font-size: 15px;
+    color: black;
+    white-space: nowrap;
+}
+.mot-3{
+    white-space: nowrap;
+    color: black;
+    font-size: 15px;
+}
+.mot-4 p{
+    white-space: nowrap;
+    color: black;
+    font-size: 15px;
+}
+/*motorista*/
+.img-motorista img{
+    border-radius: 100%;
+    padding: 3px;
+}
+.img1{
+  position: absolute;
+  width: 7%;
+  top: 200px;
+  right: 1060px;
+  top: 180px;
+}
+.img2{
+    position: absolute;
+    width: 7%;
+    top: 200px;
+    right: 1060px;
+    top: 300px; 
+}
+.img3{
+    position: absolute;
+    width: 7%;
+    top: 200px;
+    right: 1060px;
+    top: 420px;
+}
+/*img relogio*/
+.time1{
+    width: 6%;
+    position: absolute;
+    top:185px;
+    right: 720px;
+}
+.time2{
+    width: 6%;
+    position: absolute;
+    top:300px;
+    right: 720px;
+}
+.time3{
+    width: 6%;
+    position: absolute;
+    top:420px;
+    right: 720px;
+}
+/*text temp*/
+.text2{
+    position: absolute;
+    top: 80px;
+    right: -400px;
+}
+.text2 p{
+    font-size: 20px;
+    white-space: nowrap;
+    font-weight: bold;
+    color: red;
+    padding-top: 90px;
+}
+/*text tempo*/
+.text3{
+    position: absolute;
+    top: 110px;
+    right: -360px;
+}
+.text3 p{
+    font-size: 20px;
+    white-space: nowrap;
+    color: blacks;
+    font-weight: bold;
+    padding-top: 90px;
+}
+/*Imagens carro*/
+.carro1{
+    position: absolute;
+    width: 19%;
+    top: 120px;
+    right: 270px;
+
+}
+.carro2{
+    width: 15%;
+    top: 280px;
+    right: 270px;
+    position: absolute;
+}
+.carro3{
+    position: absolute;
+    width: 15%;
+    top: 390px;
+    right: 260px;
+}

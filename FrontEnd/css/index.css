@@ -14,8 +14,8 @@ section{
 /*Imagem carro*/
 .carro{
     position: absolute;
-    width: 60%;
-    right: -70px;
+    width: 50%;
+    right: 0px;
     top: 50px;
 }
 /*Div titulo (text)*/
@@ -255,4 +255,15 @@ section{
     padding-top: 6px;
    padding-left: 10px;
 }
-
+/*Conversão de tela*/ 
+/*@media screen and(max-whidth: 480px) { /*celular
+    .text h2{
+        position: absolute;
+        top: 200px;
+        right: 2px;
+    }
+    
+}
+@media screen and(max-whidth: 769px) { /*tablet*/
+    
+/*}/*
