@@ -1,5 +1,5 @@
 body{
-    background: linear-gradient(0deg,#090909 ,#F40003,#f11a1e,#F44E3F,#F57A6B,#F39A8F)
+    background-color: #23242a;;
 }
 /*Circulo vermelho*/
 section{
@@ -30,7 +30,7 @@ section{
     margin-right: -599px;
 }
 .container .text h2{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 3em;
     margin-bottom: 10px;
     line-height: 2.5em;
@@ -122,17 +122,17 @@ section{
     text-align: justify;
 }
 /*CSS cards efeito*/
-/* .content{
+ .content{
     padding: 20px;
     text-align: center;
     transform: translateY(100px);
     opacity: 0;
     transition: 0.5s;
 }
-.card:hover .content{
+.card .content{
     transform: translateY(0px);
     opacity: 1; 
-}*/
+}
 /*CSS cards formatação texto*/
 .content h2{  
     position: absolute;
@@ -144,7 +144,7 @@ section{
 }
 .content h3{
     font-size: 1.8em;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     z-index: 1;
     text-align: center;
 }
@@ -177,33 +177,82 @@ section{
     font-size: 22px;
     color: white;
     font-weight: 600;
-    left: 850px ;
-    top: 1050px;
+    left: 500px ;
+    top: 1100px;
 }
 .fundo-vermelho p{
     position: absolute;
     color: white;
-    left: 750px ;
-    top: 1100px;
+    left: 400px ;
+    top: 1150px;
     text-align: center;
 }
 .fundo-vermelho a{
     position: absolute;
+    padding: 10px;
+    width: 180px;
+    right: 800px;
+    color: #fff;
+    background: #111;
+    top: 1250px;
+    border-radius: 10px;
+    left: 550px;
+    background: rgb(255, 0, 0);
+    border-radius: 10px;
+    border-color: 1px black;
     text-decoration: none;
-    color:  black;
-    padding: 7px;
-    background-color: white;
-    border-radius: 15px;
-    font-weight: 500;
-    left: 900px;
-    border: 2px solid black;
-    top: 1200px;
+    text-align: center;
 }
-.fundo-vermelho img{
+/*forms*/
+.form-saida input{
     position: absolute;
-    top: 1050px;
-    width: 25%;
-    right: 900px;
-    border: 2px solid black;
-    border-radius: 15px;
+    text-align: center;
+    top: 1040px;
+    right: 895px;
+    height: 45px;
+    width: 160px;
+    border-radius: 15px 0px 0px 15px;
+    border: 1px solid black;
 }
+.form-chegada input{
+    position: absolute;
+    text-align: center;
+    top: 1040px;
+    right: 736px;
+    height: 45px;
+    width: 160px;
+    border: 1px solid black;
+}
+.calendario input{
+    position: absolute;
+    text-align: center;
+    top: 1040px;
+    right: 577px;
+    height: 45px;
+    width: 160px;
+    border: 1px solid black;
+}
+.n-pessoas input{
+    position: absolute;
+    text-align: center;
+    top: 1040px;
+    right: 418px;
+    height: 45px;
+    width: 160px;
+    border: 1px solid black;
+}
+.botao2{
+    width: 90px;
+    height: 45px;
+    background: red;
+    position: absolute;
+    top: 1040px;
+    right:340px;
+    text-decoration: none;
+    color: white;
+    border-radius: 0px 15px 15px 0px;
+    border: 1px solid black;
+    padding-top: 6px;
+   padding-left: 10px;
+}
+
