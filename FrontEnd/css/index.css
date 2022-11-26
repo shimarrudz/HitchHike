@@ -1,6 +1,41 @@
 body{
     background-color: #23242a;;
+    line-height: 1.5;
 }
+
+/* Header */
+    
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 80px;
+    cursor: pointer;
+}
+.menu-icon{
+    width: 30px;
+    cursor: pointer;
+}
+nav{
+    flex:1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+
+
+/* Homepage */
 /*Circulo vermelho*/
 section{
     position: relative;
@@ -21,7 +56,7 @@ section{
 /*Div titulo (text)*/
 .container{
    position: absolute;
-   top: 30px;
+   top: 90px;
    right: 1300px;
 }
 .container .text {
@@ -55,7 +90,7 @@ section{
     background: #111;
     cursor: pointer;
     position: absolute;
-    top: 480px;
+    top: 540px;
     z-index: 0;
     border-radius: 10px;
 }
@@ -178,13 +213,13 @@ section{
     color: white;
     font-weight: 600;
     left: 500px ;
-    top: 1100px;
+    top: 1400px;
 }
 .fundo-vermelho p{
     position: absolute;
     color: white;
     left: 400px ;
-    top: 1150px;
+    top: 1450px;
     text-align: center;
 }
 .fundo-vermelho a{
@@ -194,7 +229,7 @@ section{
     right: 800px;
     color: #fff;
     background: #111;
-    top: 1250px;
+    top: 1550px;
     border-radius: 10px;
     left: 550px;
     background: rgb(255, 0, 0);
@@ -207,7 +242,7 @@ section{
 .form-saida input{
     position: absolute;
     text-align: center;
-    top: 1040px;
+    top: 1250px;
     right: 895px;
     height: 45px;
     width: 160px;
@@ -217,7 +252,7 @@ section{
 .form-chegada input{
     position: absolute;
     text-align: center;
-    top: 1040px;
+    top: 1250px;
     right: 736px;
     height: 45px;
     width: 160px;
@@ -226,7 +261,7 @@ section{
 .calendario input{
     position: absolute;
     text-align: center;
-    top: 1040px;
+    top: 1250px;
     right: 577px;
     height: 45px;
     width: 160px;
@@ -235,7 +270,7 @@ section{
 .n-pessoas input{
     position: absolute;
     text-align: center;
-    top: 1040px;
+    top: 1250px;
     right: 418px;
     height: 45px;
     width: 160px;
@@ -246,7 +281,7 @@ section{
     height: 45px;
     background: red;
     position: absolute;
-    top: 1040px;
+    top: 1250px;
     right:340px;
     text-decoration: none;
     color: white;
@@ -254,6 +289,9 @@ section{
     border: 1px solid black;
     padding-top: 6px;
    padding-left: 10px;
+}
+.container-viagem{
+    margin-top: 900px;
 }
 /*Conversão de tela*/ 
 /*@media screen and(max-whidth: 480px) { /*celular
@@ -267,3 +305,72 @@ section{
 @media screen and(max-whidth: 769px) { /*tablet*/
     
 /*}/*
+
+/* Footer */
+
+
+
+/* Modificando o footer */
+
+/* Mudando a fileira */
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style: none;
+}
+
+/* Modificando o footer */
+.footer{
+    padding: 70px 0;
+}
+
+/* Definindo o col footer */
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+
+/* Alteranto o H4 do footer */
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+
+}
+
+.footer-col h4::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #F40003;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+}
+
+
+
+
+
