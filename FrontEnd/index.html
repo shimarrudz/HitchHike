@@ -13,7 +13,23 @@
 </head>
 
 <body>
+
+
     <div class="containerHome">
+
+        <div class="navbar">
+            <img src="/FrontEnd/imgs/logo HH vermelha.png" class="logo">
+            <nav>
+                <ul style="font-family:Poppins ;">
+                    <li><a href="/FrontEnd/index.html">Home</a></li>
+                    <li><a href="/FrontEnd/viagem.html">Viagens</a></li>
+                    <li><a href="/FrontEnd/forum.html">Forum</a></li>
+                    <li><a href="/FrontEnd/avaliacao.html">Avaliações</a></li>
+                    <li><a href="/FrontEnd/loginCadastro.html">Login</a></li>
+
+                </ul>
+            </nav>
+        </div>
         <!-- CHATBOX -->
         <div class="chatbox-wrapper">
             <div class="chatbox-toggle">
@@ -54,7 +70,7 @@
 
     <!--Div circulo-->
     <section>
-        <img class="carro" src="imgs/undraw_By_my_car_re_eyri.png" alt="">
+        <img class="carro" src="imgs/carro.svg" alt="">
     </section>
      <!--Div titulo (text)-->
      <div class="container"> 
@@ -98,14 +114,35 @@
      </div>
 </div>
 <div class="fundo-vermelho">
-    <h2>OFEREÇA CARNONA AGORA</h2>
+    <h2>OFEREÇA CARONA AGORA</h2>
     <p>Cadastre-se como condutor e economize nos custos da viagem <br>
         levando passageiros. São só alguns minutos para oferecer uma <br>
         carona. Tudo pronto para pegar a estrada?</p>
     <a href="#">Carona agora</a>
-    <img src="imgs/images.jpg" alt="">
 </div>
-<script src="./script/chat.js"></script>
+
+<div class="container-viagem">
+    <div class="form-saida">
+        <input type="text" required placeholder="Saindo de">
+        <label for=""></label>
+    </div>
+    <div class="form-chegada">
+        <input type="text" required placeholder="Indo para">
+        <label for=""></label>
+    </div>
+    <div class="calendario">
+        <input type="date" required placeholder="Hoje">
+        <label for=""></label>
+    </div>
+    <div class="n-pessoas">
+        <input type="number" required placeholder="Qtde pessoas">
+        <label for=""></label>
+    </div>
+        <a class="botao2" href="">procurar</a>
+    <script src="./script/chat.js"></script>
+
+</div>
+
 
 </body>
 
