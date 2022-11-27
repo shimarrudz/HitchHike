@@ -4,7 +4,7 @@ import org.w3c.dom.ls.LSOutput;
 
 public class Viagem {
 
-    private String horarioDaViagem;
+    private String horarioViagem;
     private double duracaoViagem;
     private String andamento;
 
@@ -12,17 +12,17 @@ public class Viagem {
     }
 
     public Viagem(String horarioDaViagem, double duracaoViagem, String andamento) {
-        this.horarioDaViagem = horarioDaViagem;
+        this.horarioViagem = horarioDaViagem;
         this.duracaoViagem = duracaoViagem;
         this.andamento = andamento;
     }
 
     public String getHorarioDaViagem() {
-        return horarioDaViagem;
+        return horarioViagem;
     }
 
     public void setHorarioDaViagem(String horarioDaViagem) {
-        this.horarioDaViagem = horarioDaViagem;
+        this.horarioViagem = horarioDaViagem;
     }
 
     public double getDuracaoViagem() {
