@@ -256,24 +256,6 @@ section{
     padding-top: 6px;
    padding-left: 10px;
 }
-<<<<<<< HEAD
-.container-viagem{
-    margin-top: 900px;
-}
-/*Conversão de tela*/ 
-/*@media screen and(max-whidth: 480px) { /*celular
-    .text h2{
-        position: absolute;
-        top: 200px;
-        right: 2px;
-    }
-    
-}
-@media screen and(max-whidth: 769px) { /*tablet*/
-    
-/*}/*
-=======
-/*Footer*/
 footer{
     width: 100%;
     height: 100px;
@@ -292,4 +274,3 @@ footer{
 
 
 
->>>>>>> 1e9378a358f03744e0e83125ce9333d8c7e828b6
