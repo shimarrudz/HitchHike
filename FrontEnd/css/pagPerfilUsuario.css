@@ -8,10 +8,10 @@
 body {
     background-color: #23242a;
     display: flex;
-    align-items: center;
+    align-items: left;
     justify-content: center;
     flex-direction: column;
-    min-width: 100vh;
+    min-width: 100px;
 }
 
 .card-container {
@@ -21,9 +21,9 @@ body {
     color: #23242a;
     padding-top: 15px;
     position: relative;
-    max-width: 400px;
+    max-width: 21%;
     text-align: center;
-    margin-top: 150px;
+    height: 100%;
 }
 
 .card-container .card-img {
@@ -71,6 +71,10 @@ body {
     color: #090909;
 }
 
+.card-container .buttons .btn.ghost.avaliacao {
+    margin-top: 10px;
+}
+
 .card-container .veiculo {
     background-color: #F57A6B;
     text-align: left;
@@ -78,6 +82,7 @@ body {
     margin-top: 10px;
     border-radius: 15px;
     border: 1px solid #090909;
+    height: 100%;
 }
 
 .card-container .veiculo h4 {
@@ -116,3 +121,42 @@ body {
     background-color: #F57A6B;
 }
 
+.card-container .veiculo .form-avaliacao h2 {
+    color: #090909;
+}
+
+img.estrela {
+    display: inline;
+    padding-left: 30px;
+}
+
+.card-container .veiculo .form-avaliacao .enviar {
+    background-color: transparent;
+    border: 1px solid #090909;
+    border-radius: 3px;
+    outline: none;
+    color: #090909;
+    font-weight: 400;
+    padding: 10px 25px;
+    cursor: pointer; 
+    margin-left: 25%;
+}
+
+.card-container .veiculo .form-avaliacao .enviar:hover{
+        color: red;
+        background-color: #F44E3F;
+}
+
+.card-container .veiculo .form-avaliacao .estrelas {
+    margin-left: 25%;
+}
+
+.map {
+    position: absolute;
+    margin: auto;
+    padding: 10px;
+    padding-left: 0;
+    width: 78%;
+    height: 100%;
+    left: 420px;
+}

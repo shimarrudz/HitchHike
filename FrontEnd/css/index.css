@@ -1,41 +1,7 @@
 body{
-    background-color: #23242a;;
+    background-color: #23242a;
     line-height: 1.5;
 }
-
-/* Header */
-    
-.navbar{
-    height: 12%;
-    display: flex;
-    align-items: center;
-}
-.logo{
-    width: 80px;
-    cursor: pointer;
-}
-.menu-icon{
-    width: 30px;
-    cursor: pointer;
-}
-nav{
-    flex:1;
-    text-align: right;
-}
-nav ul li{
-    list-style: none;
-    display: inline-block;
-    margin-left: 60px;
-}
-nav ul li a{
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-}
-
-
-
-/* Homepage */
 /*Circulo vermelho*/
 section{
     position: relative;
@@ -54,17 +20,17 @@ section{
     top: 50px;
 }
 /*Div titulo (text)*/
-.container{
+.container2{
    position: absolute;
    top: 90px;
    right: 1300px;
 }
-.container .text {
+.container2 .text {
     position: relative;
     max-width: 600px;
     margin-right: -599px;
 }
-.container .text h2{
+.container2 .text h2{
     color: rgb(255, 255, 255);
     font-size: 3em;
     margin-bottom: 10px;
@@ -72,11 +38,11 @@ section{
     font-weight: 700;
     text-shadow: 0 17px 17px rgba(0, 0, 0, 0.2);
 }
-.container .text h2 span{
+.container2 .text h2 span{
     font-size: 3.5em;
     color: #F40000;
 }
-.container .text p{
+.container2 .text p{
     color: white;
 }
 /*BOTÃO INICIAL*/
@@ -213,13 +179,13 @@ section{
     color: white;
     font-weight: 600;
     left: 500px ;
-    top: 1400px;
+    top: 1200px;
 }
 .fundo-vermelho p{
     position: absolute;
     color: white;
     left: 400px ;
-    top: 1450px;
+    top: 1250px;
     text-align: center;
 }
 .fundo-vermelho a{
@@ -229,7 +195,7 @@ section{
     right: 800px;
     color: #fff;
     background: #111;
-    top: 1550px;
+    top: 1350px;
     border-radius: 10px;
     left: 550px;
     background: rgb(255, 0, 0);
@@ -242,7 +208,7 @@ section{
 .form-saida input{
     position: absolute;
     text-align: center;
-    top: 1250px;
+    top: 1125px;
     right: 895px;
     height: 45px;
     width: 160px;
@@ -252,7 +218,7 @@ section{
 .form-chegada input{
     position: absolute;
     text-align: center;
-    top: 1250px;
+    top: 1125px;
     right: 736px;
     height: 45px;
     width: 160px;
@@ -261,7 +227,7 @@ section{
 .calendario input{
     position: absolute;
     text-align: center;
-    top: 1250px;
+    top: 1125px;
     right: 577px;
     height: 45px;
     width: 160px;
@@ -270,7 +236,7 @@ section{
 .n-pessoas input{
     position: absolute;
     text-align: center;
-    top: 1250px;
+    top: 1125px;
     right: 418px;
     height: 45px;
     width: 160px;
@@ -281,7 +247,7 @@ section{
     height: 45px;
     background: red;
     position: absolute;
-    top: 1250px;
+    top: 1125px;
     right:340px;
     text-decoration: none;
     color: white;
@@ -290,6 +256,7 @@ section{
     padding-top: 6px;
    padding-left: 10px;
 }
+<<<<<<< HEAD
 .container-viagem{
     margin-top: 900px;
 }
@@ -305,3 +272,24 @@ section{
 @media screen and(max-whidth: 769px) { /*tablet*/
     
 /*}/*
+=======
+/*Footer*/
+footer{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    top: 1300px;
+}
+
+
+
+
+    
+
+
+
+
+
+>>>>>>> 1e9378a358f03744e0e83125ce9333d8c7e828b6
