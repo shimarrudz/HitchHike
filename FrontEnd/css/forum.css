@@ -1,5 +1,5 @@
 body {
-    background: #28292d;
+    background-color: #23242a;;
 }
 
 .containerForum {
@@ -45,4 +45,13 @@ p {
 
 .timestamp {
     padding-right: 10px;
+}
+/*Footer*/
+footer{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    top: 700px;
 }
