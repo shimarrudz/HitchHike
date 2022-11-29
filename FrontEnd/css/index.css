@@ -264,9 +264,33 @@ footer{
     left: 0px;
     top: 1300px;
 }
-
-
-
+@media screen and (max-width: 480px){
+    .container{
+        padding: 15px;
+    }
+    .carro{
+        position: absolute;
+        right: -200px;
+    }
+    .container2{
+        right: 500px;
+    }
+    .container2 .text h2{
+        font-size: 15px;
+        position: absolute;
+        right:100px;
+    }
+    .container2 .text span{
+        font-size: 15px;
+    }
+    .container2 .text p{
+        position: absolute;
+        font-size: 12px;
+        width: 300px;
+    }
+}
+@media screen and (max-width: 768px){ 
+}
 
     
 
