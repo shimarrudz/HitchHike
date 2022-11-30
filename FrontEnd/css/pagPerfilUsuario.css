@@ -161,6 +161,85 @@ img.estrela {
     left: 420px;
 }
 @media screen and (max-width: 480px){ 
+    .card-container {
+        border-radius: 15px;
+        padding-top: 10px;
+        max-width: 60%;
+        height: 100%;
+    }
+    
+    .card-container .card-img {
+        width: 150px;
+    }
+    
+    .card-container .card-img .round {
+        padding: 7px;
+    }
+    
+    .card-container h3 {
+        margin: 10px 0;
+    }
+    
+    .card-container h6 {
+        margin: 7px 0;
+    }
+    
+    .card-container p {
+        font-size: 12px;
+    }
+    
+    .card-container .buttons {
+        margin-top: 20px;
+    }
+    
+    .card-container .buttons .btn {
+        padding: 10px 16px;
+    }
+    .card-container .buttons .btn.ghost.avaliacao {
+        margin-top: 10px;
+    }
+    .card-container .veiculo {
+        padding: 7px;
+        margin-top: 5px;
+        height: 100%;
+    }
+    .card-container .veiculo h4 {
+        margin-bottom: 15px;
+    } 
+    .card-container .veiculo ul li {
+        font-size: 11px;
+        margin: 0 7px 7px 0;
+        padding: 7px;
+    }
+    .card-container .veiculo .medias-sociais {
+        margin-top: 10px;
+    }
+    .card-container .veiculo .medias-sociais a {
+        padding: 4px;
+    }
+    .card-container .veiculo .medias-sociais a img {
+        width: 30px;
+    }
+    img.estrela {
+        padding-left: 30px;
+    }
+    
+    .card-container .veiculo .form-avaliacao .enviar {
+        padding: 5px 20px;
+        cursor: pointer; 
+        margin-left: 20%;
+    }    
+    .card-container .veiculo .form-avaliacao .estrelas {
+        margin-left: 20%;
+    }
+    .map {
+        padding: 10px;
+        width: 1%;
+    }
+    .form-avaliacao #area{
+        width: 270px;
+    }
 }
 @media screen and (max-width: 768px){ 
+    
 }
