@@ -11,8 +11,8 @@ public class Main {
         // ApiColaboração
         String recebeEnderecoEmpresa = JOptionPane.showInputDialog("Cadastre o endereço da empresa: ");
         String recebeEnderecoMotorista = JOptionPane.showInputDialog("Cadastre o endereço do motorista: ");
-        int recebeRaio = 10;
-        String recebeTrajeto = ""; //calculaTrajeto por um método/aplicativo (maps por exemplo)
+        int recebeRaio = Integer.parseInt(JOptionPane.showInputDialog("Digite o raio de distancia a calcular: "));//Por padrão foi decidido 10km de raio de distancia mas como o entregável pediu JOptionpane em todos os atributos
+        String recebeTrajeto = JOptionPane.showInputDialog("Digite o trajeto: "); //calculaTrajeto por um método/aplicativo (maps por exemplo)
         String recebeEnderecoPassageiro = JOptionPane.showInputDialog("Cadastre o endereço do passageiro: ");
 
         // Avaliação
@@ -23,12 +23,12 @@ public class Main {
         String recebeComentario = JOptionPane.showInputDialog("Se for preferível deixe um comentário: ");
 
         // Conexão
-        boolean recebeAmizade = true;
+        boolean recebeAmizade = Boolean.parseBoolean(JOptionPane.showInputDialog("Digite se existe amizade ou não: "));
 
         // Conteudo
-        String recebeMapa = "";
-        String recebeForum = "";
-        String recebeHomepage = "";
+        String recebeMapa = JOptionPane.showInputDialog("Digite conteudo para o Mapa: ");
+        String recebeForum = JOptionPane.showInputDialog("Digite conteudo para o Forum: ");
+        String recebeHomepage = JOptionPane.showInputDialog("Digite conteudo para a HomePage: ");
 
         // Empresa
         String recebeNomeEmpresa = JOptionPane.showInputDialog("Digite o nome da Empresa Parceira: ");
@@ -37,9 +37,9 @@ public class Main {
         String recebeCdVerificacao = JOptionPane.showInputDialog("Digite o código de verifição que você recebeu de sua empresa: ");
 
         // Forum
-        String recebeAssunto = "";
-        String recebeDuvida = "";
-        String recebeResposta = "";
+        String recebeAssunto = JOptionPane.showInputDialog("Digite o assunto: ");
+        String recebeDuvida = JOptionPane.showInputDialog("Digite a sua dúvida: ");
+        String recebeResposta = JOptionPane.showInputDialog("Digite a resposta da dúvida: ");
 
         // Veiculo
         String recebeModelo = JOptionPane.showInputDialog("Digite o modelo do seu carro: ");
@@ -50,9 +50,9 @@ public class Main {
         String recebeCor = JOptionPane.showInputDialog("Digite a cor do seu carro: ");
 
         // Viajem
-        String recebeHorarioViajem = "";
-        double recebeDuracaoViajem = 1;
-        String recebeAndamento = "";
+        String recebeHorarioViajem = JOptionPane.showInputDialog("Digite o horario da viagem: ");
+        double recebeDuracaoViajem = Integer.parseInt(JOptionPane.showInputDialog("Digite a duração da viagem: "));;
+        String recebeAndamento = JOptionPane.showInputDialog("Digite o andamento da viagem: ");
 
         // Usuario
         String recebeNome = JOptionPane.showInputDialog("Cadastre o seu nome: ");
