@@ -111,7 +111,6 @@ section{
 .content{
     position: relative;
     padding: 30px;
-    display: flexbox;
     width: 280px;
     height: 360px;
     margin: 30px;
@@ -120,19 +119,7 @@ section{
     background-color: rgba(255, 255, 255, 0.1);
     border-top: 1px solid rgba(0, 0, 0, 0.5);
     border-left: 1px solid rgba(0, 0, 0, 0.5);
-    text-align: justify;
-}
-/*CSS cards efeito*/
- .content{
-    padding: 20px;
-    text-align: center;
-    transform: translateY(100px);
-    opacity: 0;
-    transition: 0.5s;
-}
-.card .content{
-    transform: translateY(0px);
-    opacity: 1; 
+
 }
 /*CSS cards formatação texto*/
 .content h2{  
@@ -265,28 +252,139 @@ footer{
     top: 1300px;
 }
 @media screen and (max-width: 480px){
-    .container{
-        padding: 15px;
-    }
     .carro{
         position: absolute;
-        right: -200px;
+        right: -0px;
+        top: -5px;
     }
     .container2{
         right: 500px;
     }
     .container2 .text h2{
-        font-size: 15px;
+        font-size: 26px;
         position: absolute;
-        right:100px;
+        right:350px;
+        top: -10px;
     }
     .container2 .text span{
         font-size: 15px;
     }
     .container2 .text p{
         position: absolute;
-        font-size: 12px;
+        top: 160px;
+        right: 170px;
+        font-size: 13px;
         width: 300px;
+    }
+    /*CSS cards formatação texto*/
+    .content h3{
+        font-size: 16px;
+    }
+    .content p{
+        font-size: 12px;
+    }
+    /*botão*/
+    .botao{
+        position: absolute;
+        top: 380px;
+        right: 170px;
+        height: 30px;
+        width: 100px;
+    }
+    /*Formatação  card*/
+    .fundo-card{
+        position: absolute;
+        top: 420px;
+    }
+    .card{
+        display: contents;
+    }
+    .content{
+        position: relative;
+        padding: 15px;
+        width: 430px;
+        height: 140px;
+        margin: 20px;
+        box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+        border-radius: 15px;
+    }
+    .content a{
+        position: absolute;
+        padding: 5px 10px;
+        margin-top: 4px;
+        font-size: 12px;
+        top: 95px;
+        right: 136px;
+        background-color: #ff0000;
+    }
+    .content h2{ 
+        top: 10px;
+        right: 30px;
+        font-size: 5em;
+    }
+    /*forms */
+    .form-saida input{
+        top: 940px;
+        right: 380px;
+        height: 45px;
+        width: 80px;
+    }
+    .form-chegada input{
+        top: 940px;
+        right: 301px;
+        height: 45px;
+        width: 80px;
+    }
+    .calendario input{
+        top: 940px;
+        right: 222px;
+        height: 45px;
+        width: 80px;
+    }
+    .n-pessoas input{
+        top: 940px;
+        right: 143px;
+        height: 45px;
+        width: 80px;
+    }
+    .botao2{
+        width: 90px;
+        height: 45px;
+        top: 940px;
+        right: 53px;
+        padding-top: 6px;
+        padding-left: 10px;
+    }
+    /*text e botao*/
+    .fundo-vermelho h2{
+        position: absolute;
+        font-size: 22px;
+        color: white;
+        font-weight: 600;
+        left: 100px ;
+        top: 1000px;
+        text-align: center;
+    }
+    .fundo-vermelho p{
+        left: 0px ;
+        top: 1050px;
+    }
+    .fundo-vermelho a{
+        position: absolute;
+        padding: 7px;
+        width: 150px;
+        right: 800px;
+        top: 1200px;
+        left: 170px;
+    }
+    /*Footer*/
+    footer{
+        width: 100%;
+        height: 100px;
+        position: absolute;
+        bottom: 0;
+        left: 0px;
+        top: 1250px;
     }
 }
 @media screen and (max-width: 768px){ 
