@@ -55,3 +55,7 @@ footer{
     left: 0px;
     top: 700px;
 }
+@media screen and (max-width: 480px){ 
+}
+@media screen and (max-width: 768px){ 
+}
