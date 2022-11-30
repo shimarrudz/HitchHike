@@ -65,6 +65,6 @@ public class Avaliacao  extends Viagem{
     }
 
     public String gerarAvaliacao(){
-        return "Aqui irá ser feito o envio da avaliação que os passageiros fizerem";
+        return "O usuário digita  nome do motorista ou o código da viagem e assim faz uma avaliaçao e um comentario";
     }
 }
