@@ -1,7 +1,7 @@
 body{
     background-color:#23242a;
 }
-/*fundo com efeito*/
+/*fundo*/
 .fundo{
     position: absolute;
     top: 90px;
@@ -40,11 +40,6 @@ body{
     white-space: nowrap;
 }
 .mot-3{
-    white-space: nowrap;
-    color: rgb(255, 255, 255);
-    font-size: 15px;
-}
-.mot-4 p{
     white-space: nowrap;
     color: rgb(255, 255, 255);
     font-size: 15px;
@@ -151,6 +146,103 @@ footer{
     top: 550px;
 }
 @media screen and (max-width: 480px){ 
+    .fundo{
+        top: 100px;
+        right: 45px;
+        width: 400px;
+        height: 450px;
+    }
+    .circulo{
+        top: 50px;
+        width: 100px;
+        right: 250px;
+        height: 100px;
+        border: solid 2px black;
+    }
+    .text3{
+        top: 122px;
+        right: -50px;
+    }
+    .text3 p{
+        font-size: 12px;
+        padding: 54px;
+    }
+    /*text temp*/
+    .text2{
+        right: -450px;
+    }
+    .text2 p{
+        font-size: 12px;
+    }
+    /*Dados motorista*/
+    .mot-1  p{
+        font-size: 11px;
+    }
+    .mot-1{
+        padding-bottom: 35px;
+    }
+    .mot-2 p{
+        font-size: 11px;
+    }
+    .mot-2{ 
+        padding-bottom: 35px;
+    }
+    .mot-3{
+        font-size: 11px;
+    }
+    /*Imagens carro*/
+    .carro1{
+        width: 25%;
+        top: 140px;
+        right: 80px;
+    }
+    .carro2{
+        width: 19%;
+        top: 280px;
+        right: 80px;
+    }
+    .carro3{
+        width: 19%;
+        top: 405px;
+        right: 80px;
+    }
+    .img1{
+        position: absolute;
+        width: 12%;
+        right: 370px;
+        top: 180px;
+    }
+    .img2{
+        width: 13%;
+        top: 200px;
+        right: 370px;
+        top: 290px; 
+    }
+    .img3{
+        width: 13%;
+        top: 200px;
+        right: 370px;
+        top: 415px;
+      }
+      /*img relogio*/
+    .time1{
+        width: 5%;
+        position: absolute;
+        top:225px;
+        right: 325px;
+    }
+    .time2{
+        width: 5%;
+        position: absolute;
+        top:350px;
+        right: 325px;
+    }
+    .time3{
+        width: 5%;
+        position: absolute;
+        top:473px;
+        right: 325px;
+    }
 }
 @media screen and (max-width: 768px){ 
 }
