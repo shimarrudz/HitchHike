@@ -388,6 +388,132 @@ footer{
     }
 }
 @media screen and (max-width: 768px){ 
+    .carro{
+        position: absolute;
+        right: 10px;
+        top: -5px;
+        width: 50%;
+    }
+    .container2{
+        right: 500px;
+    }
+    .container2 .text h2{
+        font-size: 40px;
+        position: absolute;
+        right:520px;
+        top: -40px;
+    }
+    .container2 .text span{
+        font-size: 15px;
+    }
+    .container2 .text p{
+        position: absolute;
+        top: 180px;
+        right: 500px;
+        font-size: 15px;
+        width: 340px;
+    }
+    /*CSS cards formatação texto*/
+    .content h3{
+        font-size: 23px;
+    }
+    .content p{
+        font-size: 13px;
+    }
+    /*botão*/
+    .botao{
+        position: absolute;
+        top: 415px;
+        right: 470px;
+        height: 43px;
+        width: 210px;
+    }
+    /*card*/
+    .card{
+        position: absolute;
+        right: 40px;
+        top: 470px;
+        width: 110%;
+    }
+    .content{
+        position: relative;
+        padding: 15px;
+        width: 400px;
+        height: 300px;
+        margin: 30px;
+    }
+    .content a{
+        display: inline-block;
+        background-color: rgb(255, 0, 0);
+        padding: 7px 10px;
+        margin-top: 7px;
+        color: rgb(255, 255, 255); 
+        font-size: 11px;
+    }
+    /*forms */
+    .form-saida input{
+        top: 850px;
+        right: 570px;
+        height: 45px;
+        width: 120px;
+    }
+    .form-chegada input{
+        top: 850px;
+        right: 452px;
+        height: 45px;
+        width: 120px;
+    }
+    .calendario input{
+        top: 850px;
+        right: 333px;
+        height: 45px;
+        width: 120px;
+    }
+    .n-pessoas input{
+        top: 850px;
+        right: 214px;
+        height: 45px;
+        width: 120px;
+    }
+    .botao2{
+        width: 120px;
+        height: 45px;
+        top: 850px;
+        right: 94px;
+        padding-top: 6px;
+        padding-left: 10px;
+    }
+    /*text e botao*/
+    .fundo-vermelho h2{
+        position: absolute;
+        font-size: 28px;
+        color: white;
+        font-weight: 600;
+        left: 190px;
+        top: 920px;
+        text-align: center;
+    }
+    .fundo-vermelho p{
+        left: 100px;
+        top: 980px;
+    }
+    .fundo-vermelho a{
+        padding: 7px;
+        width: 150px;
+        right: 0px;
+        top: 1070px;
+        left: 300px;
+        border: solid black 1px;
+    }
+    /*Footer*/
+    footer{
+        width: 100%;
+        height: 100px;
+        position: absolute;
+        bottom: 0;
+        left: 0px;
+        top: 1120px;
+    }
 }
 
     

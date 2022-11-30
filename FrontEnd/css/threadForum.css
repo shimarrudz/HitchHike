@@ -69,7 +69,4 @@ button {
 .comment-ts {
     padding-left: 10px;
 }
-@media screen and (max-width: 480px){ 
-}
-@media screen and (max-width: 768px){ 
-}
+/*A pagina já se encontra responsiva*/
