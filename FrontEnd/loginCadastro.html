@@ -11,22 +11,23 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" type="text/css" href="./css/loginCadastro.css">
+    <script defer type="commonjs" src="./script/formsValidation.js"></script>
 </head>
 
 <body>
-<!--HEADER-->
-<div class="container">
-    <div class="navbar">
-        <img src="/FrontEnd/imgs/logo HH vermelha.png" class="logo">
-        <nav>
-            <ul style="font-family:Poppins ;">
-                <li><a href="/FrontEnd/index.html">Home</a></li>
-                <li><a href="/FrontEnd/viagem.html">Viagens</a></li>
-                <li><a href="/FrontEnd/forum.html">Forum</a></li>
-                <li><a href="/FrontEnd/avaliacao.html">Avaliações</a></li>
-                <li><a href="/FrontEnd/loginCadastro.html">Login</a></li>
+    <!--HEADER-->
+    <div class="container">
+        <div class="navbar">
+            <img src="./imgs/logo HH vermelha.png" class="logo">
+            <nav>
+                <ul style="font-family:Poppins ;">
+                    <li><a href="/FrontEnd/index.html">Home</a></li>
+                    <li><a href="/FrontEnd/viagem.html">Viagens</a></li>
+                    <li><a href="/FrontEnd/forum.html">Forum</a></li>
+                    <li><a href="/FrontEnd/avaliacao.html">Avaliações</a></li>
+                    <li><a href="/FrontEnd/loginCadastro.html">Login</a></li>
         </div>
-</div>
+    </div>
     <div class="containerLogin">
 
         <div class="wrapper">
@@ -34,17 +35,17 @@
                 <form action="">
                     <h2>Login</h2>
                     <div class="input-group">
-                        <input type="text" required>
+                        <input type="text" id="usernameDefined" required>
                         <label for="">Username</label>
                     </div>
                     <div class="input-group">
-                        <input type="password" required>
+                        <input type="password" id="passwordDefined" required>
                         <label for="">Senha</label>
                     </div>
                     <div class="remember">
                         <label><input type="checkbox"> Lembrar de mim</label>
                     </div>
-                    <button type="submit">Login</button>
+                    <button onclick="logarUsuario()" id="logar" type="button">Login</button>
                     <div class="signUp-link">
                         <p>Não possui uma conta? <a href="#" class="signUpBtn-link">Cadastre-se</a></p>
                     </div>
@@ -63,21 +64,21 @@
                 <form action="">
                     <h2>Cadastre-se</h2>
                     <div class="input-group">
-                        <input type="text" required>
+                        <input type="text" id="username" name="username" required>
                         <label for="">Username</label>
                     </div>
                     <div class="input-group">
-                        <input type="email" required>
+                        <input type="email" id="email" name="email" required>
                         <label for="">Email</label>
                     </div>
                     <div class="input-group">
-                        <input type="password" required>
+                        <input type="password" id="password" name="password" required>
                         <label for="">Senha</label>
                     </div>
                     <div class="remember">
-                        <label><input type="checkbox"> Eu concordo com os termos e condições</label>
+                        <label><input type="checkbox" id="terms" name="terms"> Eu concordo com os termos e condições</label>
                     </div>
-                    <button type="submit">Cadastrar</button>
+                    <button onclick="cadastraUsuario()" id="cadastrar">Cadastrar</button>
                     <div class="signUp-link">
                         <p>Já possui uma conta? <a href="#" class="signInBtn-link">Login</a></p>
                     </div>
@@ -86,27 +87,26 @@
         </div>
     </div>
 
-    <script src="./script/loginCadastro.js"></script>
-<!-- Tag para criar footer -->
-<footer class="footer">
-    <!-- Separando por container para usar flex -->
-    <div class="container3" >
-        <!-- Fileiras do footer -->
-        <div class="row">
-            <!-- Criando o conteúdo do footer usando listas -->
-            <!-- Coluna da equipe -->
-            <div class="footer-col">
-                <h4>Equipe</h4>
-                <ul>
-                    <li><a href="">Vinicius Bassi</a></li>
-                    <li><a href="">Gabriel Tricerri</a></li>
-                    <li><a href="">Thiago Gyorgy</a></li>
-                    <li><a href="">Matheus Ramos</a></li>
-                    <li><a href="">Victor Shimada</a></li>
-                </ul>
-            </div>
-            <!-- Coluna sobre nós -->
-                 <div class="footer-col">
+    <!-- Tag para criar footer -->
+    <footer class="footer">
+        <!-- Separando por container para usar flex -->
+        <div class="container3">
+            <!-- Fileiras do footer -->
+            <div class="row">
+                <!-- Criando o conteúdo do footer usando listas -->
+                <!-- Coluna da equipe -->
+                <div class="footer-col">
+                    <h4>Equipe</h4>
+                    <ul>
+                        <li><a href="">Vinicius Bassi</a></li>
+                        <li><a href="">Gabriel Tricerri</a></li>
+                        <li><a href="">Thiago Gyorgy</a></li>
+                        <li><a href="">Matheus Ramos</a></li>
+                        <li><a href="">Victor Shimada</a></li>
+                    </ul>
+                </div>
+                <!-- Coluna sobre nós -->
+                <div class="footer-col">
                     <h4>U Invest</h4>
                     <ul>
                         <li><a href="">Sobre nós</a></li>
@@ -115,27 +115,93 @@
                         <li><a href="">Responsáveis</a></li>
                     </ul>
                 </div>
-                    <div class="footer-col">
-                        <h4>Ajuda</h4>
-                        <ul>
-                            <li><a href="">Dúvidas frequentes</a></li>
-                            <li><a href="">Chatbot Watson</a></li>
-                            <li><a href="">Contatos</a></li>
-                            <li><a href="">Opções de assinaturas</a></li>
-                        </ul>
+                <div class="footer-col">
+                    <h4>Ajuda</h4>
+                    <ul>
+                        <li><a href="">Dúvidas frequentes</a></li>
+                        <li><a href="">Chatbot Watson</a></li>
+                        <li><a href="">Contatos</a></li>
+                        <li><a href="">Opções de assinaturas</a></li>
+                    </ul>
+                </div>
+                <!-- Listas para os ícones das redes sociais -->
+                <div class="footer-col">
+                    <h4>Redes Socias</h4>
+                    <div class="redes-socias-links">
+                        <a href=""> <i class="fab fa-instagram"></i></a>
+                        <a href=""> <i class="fab fa-twitter"></i></a>
+                        <a href=""> <i class="fab fa-linkedin-in"></i></a>
+                        <a href=""> <i class="fab fa-facebook-f"></i></a>
                     </div>
-                    <!-- Listas para os ícones das redes sociais -->
-                    <div class="footer-col">
-                        <h4>Redes Socias</h4>
-                        <div class="redes-socias-links">           
-                            <a href=""> <i class="fab fa-instagram"></i></a>
-                            <a href=""> <i class="fab fa-twitter"></i></a>
-                            <a href=""> <i class="fab fa-linkedin-in"></i></a>
-                            <a href=""> <i class="fab fa-facebook-f"></i></a>
-                            </div>
-        </div>
-    </div>
-</footer>
+                </div>
+            </div>
+    </footer>
+    <script>
+        let username = document.getElementById("username");
+        let email = document.getElementById("email");
+        let password = document.getElementById("password");
+        let terms = document.getElementById("terms");
+
+        function cadastraUsuario() {
+            if (username && email && password && terms) {
+                let listaUser = JSON.parse(localStorage.getItem('listaUser') || '[]')
+
+                listaUser.push({
+                    usernameCad: username.value,
+                    emailCad: email.value,
+                    passwordCad: password.value,
+                    termsCad: terms.value
+                })
+
+                localStorage.setItem('listaUser', JSON.stringify(listaUser))
+            } else {
+                console.log("Algo deu errado")
+            }
+        }
+
+        let usernameDefined = document.getElementById("usernameDefined");
+        let passwordDefined = document.getElementById("passwordDefined");
+
+        function logarUsuario() {
+            let listaUser = []
+
+            let userValid = {
+                username: '',
+                password: ''
+            }
+
+            listaUser = JSON.parse(localStorage.getItem('listaUser'))
+
+            listaUser.forEach((item) => {
+                if (usernameDefined.value == item.usernameCad && passwordDefined.value == item.passwordCad) {
+
+                    userValid = {
+                        username: item.usernameCad,
+                        password: item.passwordCad
+                    }
+
+                } else {
+                    console.log("Deu erro aqui (Primeiro If)")
+                    console.log(usernameDefined.value, item.usernameCad)
+                    console.log(usernameDefined.value, item.usernameCad)
+                }
+            })
+
+            if (usernameDefined.value == userValid.username && passwordDefined.value == userValid.password) {
+                let mathRandom = Math.random().toString(16).substr(2)
+                let token = mathRandom + mathRandom
+                localStorage.setItem('token', token)
+                localStorage.setItem('userLogado', JSON.stringify(userValid))
+                console.log("Você logou! Sua sessão foi criada com sucesso.")
+                window.alert("Você logou! Sua sessão foi criada com sucesso.")
+            } else {
+                console.log("Usuário ou senha incorretos")
+                window.alert("Usuário ou senha incorretos")
+            }
+
+        }
+    </script>
+    <script src="./script/loginCadastro.js"></script>
 </body>
 
 </html>

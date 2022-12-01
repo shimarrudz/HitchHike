@@ -5,22 +5,62 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="css/pagPerfilUsuario.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/pagPerfilUsuario.css">
+    <link rel="stylesheet" href="css/chat.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <title>Página de Perfil e Avaliação</title>
-    <script src = " https://unpkg.com/sweetalert/dist/sweetalert.min.js "></script>
 </head>
 
 <body>
+
+    <!-- CHATBOX -->
+    <div class="chatbox-wrapper">
+        <div class="chatbox-toggle">
+            <i class='bx bx-message-dots'></i>
+        </div>
+        <div class="chatbox-message-wrapper">
+            <div class="chatbox-message-header">
+                <div class="chatbox-message-profile">
+                    <img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bWFufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="" class="chatbox-message-image">
+                    <div>
+                        <h4 class="chatbox-message-name">Jonathan Doe</h4>
+                        <p class="chatbox-message-status">online</p>
+                    </div>
+                </div>
+                <div class="chatbox-message-dropdown">
+                    <i class='bx bx-dots-vertical-rounded chatbox-message-dropdown-toggle'></i>
+                    <ul class="chatbox-message-dropdown-menu">
+                        <li>
+                            <a href="#">Pesquisar</a>
+                        </li>
+                        <li>
+                            <a href="#">Reportar</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="chatbox-message-content">
+                <h4 class="chatbox-message-no-message">Você não tem mensagens ainda!</h4>
+            </div>
+            <div class="chatbox-message-bottom">
+                <form action="#" class="chatbox-message-form">
+                    <textarea rows="1" placeholder="Type message..." class="chatbox-message-input"></textarea>
+                    <button type="submit" class="chatbox-message-submit"><i class='bx bx-send' ></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
     <div class="card-container">
         <div class="card-img">
             <img src="imgs/pagPerfil.png" alt="Foto de Perfil" class="round" width="100%">
         </div>
-        
+
         <h3>Thiago Castro</h3>
         <h6>São Paulo, SP</h6>
         <p> FIAP <br> +55 11 999999999</p>
-        
+
         <div class="buttons">
             <button class="btn ghost" onclick="seguindo()">Seguir</button>
             <button class="btn" onclick="adicionarAmigo()">Adicionar Amigo</button>
@@ -49,19 +89,19 @@
                     <textarea name="" id="area" cols="50" rows="8" placeholder="Digite sua mensagem aqui..."></textarea>
                     <div class="estrelas">
 
-                            <a href="javascript:void(0)" onclick="Avaliar(1)">
+                        <a href="javascript:void(0)" onclick="Avaliar(1)">
                             <img src="imgs/star0.png" id="s1"></a>
-                            
-                            <a href="javascript:void(0)" onclick="Avaliar(2)">
+
+                        <a href="javascript:void(0)" onclick="Avaliar(2)">
                             <img src="imgs/star0.png" id="s2"></a>
-                            
-                            <a href="javascript:void(0)" onclick="Avaliar(3)">
+
+                        <a href="javascript:void(0)" onclick="Avaliar(3)">
                             <img src="imgs/star0.png" id="s3"></a>
-                            
-                            <a href="javascript:void(0)" onclick="Avaliar(4)">
+
+                        <a href="javascript:void(0)" onclick="Avaliar(4)">
                             <img src="imgs/star0.png" id="s4"></a>
-                            
-                            <a href="javascript:void(0)" onclick="Avaliar(5)">
+
+                        <a href="javascript:void(0)" onclick="Avaliar(5)">
                             <img src="imgs/star0.png" id="s5"></a>
                     </div>
                     <button type="submit" class="enviar" onclick="enviando()">Envie sua avaliação!</button>
@@ -75,6 +115,9 @@
     <img src="imgs/mapa-jardins.jpg" alt="Mapa Jardins São Paulo, SP" class="map">
 
     <script src="script/perfilUsuario.js"></script>
+    <script src=" https://unpkg.com/sweetalert/dist/sweetalert.min.js "></script>
+    <script src="./script/chat.js"></script>
 
 </body>
+
 </html>
