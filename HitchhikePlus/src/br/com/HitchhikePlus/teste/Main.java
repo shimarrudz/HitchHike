@@ -78,9 +78,7 @@ public class Main {
                 recebeAvaliacaoViajem, recebeAvaliacaoVeiculo, recebeAvaliacaoMotorista,
                 recebeAvaliacaoPassageiro, recebeComentario);
 
-        Conexao conexao = new Conexao(recebeNome, recebeEmailPessoal, recebeCpf, recebeTelefone,
-                recebeGenero, recebeDataNascimento, recebeBairo, recebeCidade,
-                recebeEstado, recebeEndereco, recebeComplementos, recebeCep, recebeSenha, recebeAmizade);
+        Conexao conexao = new Conexao(recebeAmizade);
 
         Conteudo conteudo = new Conteudo(recebeMapa, recebeForum, recebeHomepage);
 
@@ -102,10 +100,5 @@ public class Main {
 
         Criptografia criptografia = new Criptografia();
 
-        Usuario usuario = new Usuario();
-        int nUsuarios = 1; //numeros de usuarios a cadastrar
-        for (int i = 0; i < nUsuarios; i++) {
-            usuario.cadastrar(usuario);
-        }
     }
 }

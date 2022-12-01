@@ -143,7 +143,11 @@ public class Usuario {
 		this.senha = senha;
 	}
 
-	public void cadastrar(Usuario usuario) {
+	public String toString() {
+		return nome + "\n" + emailPessoal + "\n" + cpf + "\n" + telefone + "\n" + genero + "\n" + dataNascimento + "\n" + bairro + "\n" + cidade + "\n" + estado + "\n" + endereco + "\n" + complementos + "\n" + cep + "\n" + senha;
+	}
+
+	public ArrayList cadastrar(Usuario usuario) {
 
 		ArrayList<Usuario> usuarios = new ArrayList<Usuario>();
 
@@ -178,5 +182,6 @@ public class Usuario {
 		usuarios.add(usuario);
 
 		System.out.println(usuarios);
+		return usuarios;
 	}
 }

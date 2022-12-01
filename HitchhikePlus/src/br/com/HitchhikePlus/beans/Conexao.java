@@ -1,14 +1,15 @@
 package br.com.HitchhikePlus.beans;
 
-public class Conexao extends Usuario {
+import javax.swing.*;
+
+public class Conexao {
 
     private boolean amizade;
 
     public Conexao() {
     }
 
-    public Conexao(String nome, String emailPessoal, String cpf, String telefone, char genero, String dataNascimento, String bairro, String cidade, String estado, String endereco, String complementos, int cep, String senha, boolean amizade) {
-        super(nome, emailPessoal, cpf, telefone, genero, dataNascimento, bairro, cidade, estado, endereco, complementos, cep, senha);
+    public Conexao(boolean amizade) {
         this.amizade = amizade;
     }
 
@@ -20,8 +21,18 @@ public class Conexao extends Usuario {
         this.amizade = amizade;
     }
 
-    public String criarConexao() {
-        return "Irá criar o laço de amizade entre 2 usuários";
+    public Boolean criarConexao(Usuario usuario1, Usuario usuario2) {
+
+        String confirmacao = JOptionPane.showInputDialog("Deseja criar conexão com " + usuario2.getNome() + "?");
+
+        if(confirmacao.equals("Sim") || confirmacao.equals("sim") || confirmacao.equals("s")){
+            JOptionPane.showMessageDialog(null, "Conexão criada com sucesso.");
+            setAmizade(true);
+        }else{
+            setAmizade(false);
+            System.out.println("Conexão cancelada");
+        }
+        return isAmizade();
     }
 
     public String solicitarAmizade(){

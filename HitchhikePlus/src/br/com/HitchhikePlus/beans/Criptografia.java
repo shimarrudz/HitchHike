@@ -20,8 +20,4 @@ public class Criptografia {
 
         return retorno;
     }
-
-    public void decriptacao() {
-        System.out.println("Método para decriptar a senha");
-    }
 }

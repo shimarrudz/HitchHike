@@ -40,6 +40,7 @@ public class Forum {
     }
 
     public String enviarDuvidasRH() {
+
         return "Esse método recebe o email cadastrado da empresa e envia suas dúvidas para a mesma caso tenha algum problema com a plataforma";
     }
 

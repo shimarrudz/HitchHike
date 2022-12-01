@@ -1,6 +1,10 @@
 package br.com.HitchhikePlus.beans;
 
-public class Avaliacao  extends Viagem{
+import javax.swing.*;
+import java.util.ArrayList;
+import java.util.Objects;
+
+public class Avaliacao extends Viagem {
 
     //Avaliacao dos passageiros para o motorista
     private String avaliacaoViagem;
@@ -64,7 +68,30 @@ public class Avaliacao  extends Viagem{
         this.comentario = comentario;
     }
 
-    public String gerarAvaliacao(){
-        return "O usuário digita  nome do motorista ou o código da viagem e assim faz uma avaliaçao e um comentario";
+    public void gerarAvaliacao() {
+
+        ArrayList<String> motoristas = new ArrayList<>();
+
+        motoristas.add(JOptionPane.showInputDialog("Adicione um Motorista:"));
+        motoristas.add(JOptionPane.showInputDialog("Adicione outro Motorista:"));
+        motoristas.add(JOptionPane.showInputDialog("Adicione o ultimo Motorista:"));
+
+        System.out.println(motoristas);
+
+        String usuarioMotorista = JOptionPane.showInputDialog("Qual motorista deseja avaliar?");
+
+        if (motoristas.contains(usuarioMotorista)) {
+            int notaAvaliacao = Integer.parseInt
+                    (JOptionPane.showInputDialog("Digite a nota desejada para sua avaliação (0 à 5)"));
+
+            while (notaAvaliacao > 5 || notaAvaliacao < 0) {
+                System.out.println("Valor invalido.");
+                notaAvaliacao = Integer.parseInt
+                        (JOptionPane.showInputDialog("Digite a nota desejada para sua avaliação (0 à 5)"));
+            }
+            System.out.println("Obrigado pelo seu Feedback! Sua Avaliação foi enviada.");
+        } else {
+            System.out.println("Motorista não cadastrado.");
+        }
     }
 }
