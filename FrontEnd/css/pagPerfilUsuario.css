@@ -1,0 +1,317 @@
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+    }
+    
+    body {
+        background-color: #23242a;
+        display: flex;
+        align-items: left;
+        justify-content: center;
+        flex-direction: column;
+        min-width: 100px;
+    }
+    
+    .card-container {
+        background-color: #F39A8F;
+        border-radius: 15px;
+        box-shadow: 0px 0px 20px 0px #00000029;
+        color: #23242a;
+        padding-top: 15px;
+        position: relative;
+        max-width: 21%;
+        text-align: center;
+        height: 100%;
+    }
+    
+    .card-container .card-img {
+        width: 170px;
+        margin: auto;
+    }
+    
+    .card-container .card-img .round {
+        border: 1px solid #F40003;
+        border-radius: 50%;
+        padding: 7px;
+    }
+    
+    .card-container h3 {
+        margin: 10px 0;
+    }
+    
+    .card-container h6 {
+        margin: 7px 0;
+        text-transform: uppercase;
+    }
+    
+    .card-container p {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    
+    .card-container .buttons {
+        margin-top: 10px;
+    }
+    
+    .card-container .buttons .btn {
+        background-color: #F44E3F;
+        border: 1px solid #090909;
+        border-radius: 3px;
+        outline: none;
+        color: #090909;
+        font-weight: 400;
+        padding: 10px 25px;
+        cursor: pointer;
+    }
+    
+    .card-container .buttons .btn.ghost {
+        background-color: transparent;
+        color: #090909;
+    }
+    
+    .card-container .buttons .btn.ghost.avaliacao {
+        margin-top: 10px;
+    }
+    
+    .card-container .veiculo {
+        background-color: #F57A6B;
+        text-align: left;
+        padding: 15px;
+        margin-top: 10px;
+        border-radius: 15px;
+        border: 1px solid #090909;
+        height: 100%;
+    }
+    
+    .card-container .veiculo h4 {
+        margin-bottom: 15px;
+    }
+    
+    .card-container .veiculo ul {
+        list-style: none;
+    }
+    
+    .card-container .veiculo ul li {
+        border: 1px solid #B3B8CD;
+        border-radius: 2px;
+        display: inline-block;
+        font-size: 12px;
+        margin: 0 7px 7px 0;
+        padding: 7px;
+    }
+    
+    .card-container .veiculo .medias-sociais {
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .card-container .veiculo .medias-sociais a {
+        text-decoration: none;
+        padding: 4px;
+    }
+    
+    .card-container .veiculo .medias-sociais a img {
+        width: 30px;
+    }
+    
+    .btn.btn.ghost:hover,
+    .btn.btn.ghost:active {
+        color: red;
+        background-color: #F57A6B;
+    }
+    
+    .card-container .veiculo .form-avaliacao h2 {
+        color: #090909;
+    }
+    
+    img.estrela {
+        display: inline;
+        padding-left: 30px;
+    }
+    
+    .card-container .veiculo .form-avaliacao .enviar {
+        background-color: transparent;
+        border: 1px solid #090909;
+        border-radius: 3px;
+        outline: none;
+        color: #090909;
+        font-weight: 400;
+        padding: 10px 25px;
+        cursor: pointer;
+        margin-left: 25%;
+    }
+    
+    .card-container .veiculo .form-avaliacao .enviar:hover {
+        color: red;
+        background-color: #F44E3F;
+    }
+    
+    .card-container .veiculo .form-avaliacao .estrelas {
+        margin-left: 25%;
+    }
+    
+    .map {
+        position: absolute;
+        margin: auto;
+        padding: 10px;
+        padding-left: 0;
+        top: 65px;
+        height: 100%;
+        left: 290px;
+    }
+    
+    .form-avaliacao #area {
+        width: 260px;
+    }
+    
+    @media screen and (max-width: 480px) {
+        .card-container {
+            border-radius: 15px;
+            padding-top: 10px;
+            max-width: 60%;
+            height: 100%;
+        }
+        .card-container .card-img {
+            width: 150px;
+        }
+        .card-container .card-img .round {
+            padding: 7px;
+        }
+        .card-container h3 {
+            margin: 10px 0;
+        }
+        .card-container h6 {
+            margin: 7px 0;
+        }
+        .card-container p {
+            font-size: 12px;
+        }
+        .card-container .buttons {
+            margin-top: 20px;
+        }
+        .card-container .buttons .btn {
+            padding: 10px 16px;
+        }
+        .card-container .buttons .btn.ghost.avaliacao {
+            margin-top: 10px;
+        }
+        .card-container .veiculo {
+            padding: 7px;
+            margin-top: 5px;
+            height: 100%;
+        }
+        .card-container .veiculo h4 {
+            margin-bottom: 15px;
+        }
+        .card-container .veiculo ul li {
+            font-size: 11px;
+            margin: 0 7px 7px 0;
+            padding: 7px;
+        }
+        .card-container .veiculo .medias-sociais {
+            margin-top: 10px;
+        }
+        .card-container .veiculo .medias-sociais a {
+            padding: 4px;
+        }
+        .card-container .veiculo .medias-sociais a img {
+            width: 30px;
+        }
+        img.estrela {
+            padding-left: 30px;
+        }
+        .card-container .veiculo .form-avaliacao .enviar {
+            padding: 5px 20px;
+            cursor: pointer;
+            margin-left: 20%;
+        }
+        .card-container .veiculo .form-avaliacao .estrelas {
+            margin-left: 20%;
+        }
+        .map {
+            padding: 10px;
+            width: 1%;
+        }
+        .form-avaliacao #area {
+            width: 270px;
+        }
+    }
+    
+    @media screen and (max-width: 768px) {
+        .card-container {
+            border-radius: 15px;
+            padding-top: 10px;
+            max-width: 35%;
+            height: 100%;
+        }
+        .card-container .card-img {
+            width: 190px;
+        }
+        .card-container .card-img .round {
+            padding: 9px;
+        }
+        .card-container h3 {
+            margin: 10px 0;
+        }
+        .card-container h6 {
+            margin: 7px 0;
+        }
+        .card-container p {
+            font-size: 14px;
+            line-height: 21px;
+        }
+        .card-container .buttons {
+            margin-top: 10px;
+        }
+        .card-container .buttons .btn {
+            border-radius: 3px;
+            font-weight: 400;
+            padding: 9px 20px;
+        }
+        .card-container .buttons .btn.ghost.avaliacao {
+            margin-top: 15px;
+        }
+        .card-container .veiculo {
+            padding: 15px;
+            margin-top: 15px;
+            height: 70%;
+        }
+        .carro {
+            width: 100%;
+        }
+        .card-container .veiculo h4 {
+            margin-bottom: 15px;
+        }
+        .card-container .veiculo ul li {
+            font-size: 12px;
+            margin: 0 7px 7px 0;
+            padding: 7px;
+        }
+        .card-container .veiculo .medias-sociais {
+            margin-top: 20px;
+        }
+        .card-container .veiculo .medias-sociais a {
+            padding: 4px;
+        }
+        .card-container .veiculo .medias-sociais a img {
+            width: 30px;
+        }
+        .card-container .veiculo .form-avaliacao .enviar {
+            padding: 10px 25px;
+            margin-left: 12%;
+        }
+        .card-container .veiculo .form-avaliacao .estrelas {
+            margin-left: 13%;
+        }
+        .map {
+            top: 0px;
+            width: 78%;
+            height: 100%;
+            left: 275px;
+        }
+        .form-avaliacao #area {
+            width: 240px;
+        }
+    }

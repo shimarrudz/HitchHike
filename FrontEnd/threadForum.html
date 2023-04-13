@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/threadForum.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/chat.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>Fórum</title>
+</head>
+
+<body>
+
+    <!--HEADER-->
+    <div class="container">
+        <div class="navbar">
+            <img src="/FrontEnd/imgs/logo HH vermelha.png" class="logo">
+            <nav>
+                <ul style="font-family:Poppins ;">
+                    <li><a href="/FrontEnd/index.html">Home</a></li>
+                    <li><a href="/FrontEnd/historico.html">Viagens</a></li>
+                    <li><a href="/FrontEnd/forum.html">Forum</a></li>
+                    <li><a href="/FrontEnd/perfilAvaliacao.html">Avaliações</a></li>
+                    <li><a href="/FrontEnd/loginCadastro.html">Login</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- CHATBOX -->
+    <div class="chatbox-wrapper">
+        <div class="chatbox-toggle">
+            <i class='bx bx-message-dots'></i>
+        </div>
+        <div class="chatbox-message-wrapper">
+            <div class="chatbox-message-header">
+                <div class="chatbox-message-profile">
+                    <img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bWFufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="" class="chatbox-message-image">
+                    <div>
+                        <h4 class="chatbox-message-name">Jonathan Doe</h4>
+                        <p class="chatbox-message-status">online</p>
+                    </div>
+                </div>
+                <div class="chatbox-message-dropdown">
+                    <i class='bx bx-dots-vertical-rounded chatbox-message-dropdown-toggle'></i>
+                    <ul class="chatbox-message-dropdown-menu">
+                        <li>
+                            <a href="#">Pesquisar</a>
+                        </li>
+                        <li>
+                            <a href="#">Reportar</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="chatbox-message-content">
+                <h4 class="chatbox-message-no-message">Você não tem mensagens ainda!</h4>
+            </div>
+            <div class="chatbox-message-bottom">
+                <form action="#" class="chatbox-message-form">
+                    <textarea rows="1" placeholder="Type message..." class="chatbox-message-input"></textarea>
+                    <button type="submit" class="chatbox-message-submit"><i class='bx bx-send' ></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="containerThreadForum">
+        <div class="top-bar">
+            <h1>
+                Fórum
+            </h1>
+        </div>
+        <div class="main">
+            <div class="header">
+            </div>
+            <textarea></textarea>
+            <button>Adicionar comentário</button>
+            <div class="comments">
+            </div>
+        </div>
+    </div>
+    <!-- Tag para criar footer -->
+    <footer class="footer">
+        <!-- Separando por container para usar flex -->
+        <div class="container3">
+            <!-- Fileiras do footer -->
+            <div class="row">
+                <!-- Criando o conteúdo do footer usando listas -->
+                <!-- Coluna da equipe -->
+                <div class="footer-col">
+                    <h4>Equipe</h4>
+                    <ul>
+                        <li><a href="">Vinicius Bassi</a></li>
+                        <li><a href="">Gabriel Tricerri</a></li>
+                        <li><a href="">Thiago Gyorgy</a></li>
+                        <li><a href="">Matheus Ramos</a></li>
+                        <li><a href="">Victor Shimada</a></li>
+                    </ul>
+                </div>
+                <!-- Coluna sobre nós -->
+                <div class="footer-col">
+                    <h4>U Invest</h4>
+                    <ul>
+                        <li><a href="">Sobre nós</a></li>
+                        <li><a href="">Nossos serviços</a></li>
+                        <li><a href="">Política de privacidade</a></li>
+                        <li><a href="">Responsáveis</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Ajuda</h4>
+                    <ul>
+                        <li><a href="">Dúvidas frequentes</a></li>
+                        <li><a href="">Chatbot Watson</a></li>
+                        <li><a href="">Contatos</a></li>
+                        <li><a href="">Opções de assinaturas</a></li>
+                    </ul>
+                </div>
+                <!-- Listas para os ícones das redes sociais -->
+                <div class="footer-col">
+                    <h4>Redes Socias</h4>
+                    <div class="redes-socias-links">
+                        <a href=""> <i class="fab fa-instagram"></i></a>
+                        <a href=""> <i class="fab fa-twitter"></i></a>
+                        <a href=""> <i class="fab fa-linkedin-in"></i></a>
+                        <a href=""> <i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+    </footer>
+    <script src="./script/dataForum.js"></script>
+    <script src="./script/threadForum.js"></script>
+    <script src="./script/chat.js"></script>
+</body>
+
+</html>
